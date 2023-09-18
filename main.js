@@ -21,12 +21,26 @@ function ingresarPersona() {
 }
 
 // Ciclo
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 4; i++) {
     ingresarPersona();
 }
 
 // Mostrar datos
 console.log(personas);
+
+// Filtrar personas mayores de 18 años
+let personasMayoresDe18 = personas.filter(persona => persona.edad > 18);
+
+// Filtrar personas menores de 18
+let personasMenoresDe18 = personas.filter(persona => persona.edad < 18);
+
+// Mostrar personas mayores de 18 años
+console.log("Personas mayores de 18 años:");
+console.log(personasMayoresDe18);
+
+// Mostrar personas menores de 18
+console.log("Personas menores o iguales a 18 años:");
+console.log(personasMenoresDe18);
 
 
 
